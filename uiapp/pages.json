@@ -1,0 +1,71 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+				// "app-plus": {
+				// 	"titleNView": false //关闭头部
+				// }
+			}
+		},
+		{
+			"path": "pages/tabs/list",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/search/search-list",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/tabs/study",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/tabs/me",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/login/logincount",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		},
+		{
+			"path": "pages/login/code",
+			"style": {
+				"navigationStyle": "custom" //自定义头部
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "爱学习网",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

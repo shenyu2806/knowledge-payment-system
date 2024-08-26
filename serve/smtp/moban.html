@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱学习网</title>
+    <style>
+        .qmbox li{list-style: none;}
+        .qmbox a{text-decoration: none;}
+        .qmbox body{margin: 0;}
+    
+        .qmbox .box{
+          background-color: #EBEBEB;
+          height: 100%;
+        }
+        .qmbox .logo_top {padding: 20px 0;}
+        .qmbox .logo_top img{
+          display: block;
+          width: auto;
+          margin: 0 auto;
+        }
+        .qmbox .card{
+          width: 650px;
+          margin: 0 auto;
+          background-color: white;
+          font-size: 0.8rem;
+          line-height: 22px;
+          padding: 40px 50px;
+          box-sizing: border-box;
+        }
+        .qmbox .contimg{
+          text-align: center;
+        }
+        .qmbox button{
+          background-color: #F75697;
+          padding: 8px 16px;
+          border-radius: 6px;
+          outline: none;
+          color: white;
+          border: 0;
+        }
+        .qmbox .lvst{
+          color: #57AC80;
+        }
+        .qmbox .banquan{
+          display: flex;
+          justify-content: center;
+          flex-wrap: nowrap;
+          color: #B7B8B9;
+          font-size: 0.4rem;
+          padding: 20px 0;
+          margin: 0;
+          padding-left: 0;
+        }
+        .qmbox .banquan li span{
+          display: inline-block;
+          padding: 0 8px;
+        }
+        @media (max-width: 650px){
+          .qmbox .card{
+            padding: 5% 5%;
+          }
+          .qmbox .logo_top img,.qmbox .contimg img{width: 280px;}
+          .qmbox .box{height: auto;}
+          .qmbox .card{width: auto;}
+        }
+        @media (max-width: 280px){.qmbox .logo_top img,.qmbox .contimg img{width: 100%;}}
+      </style>
+</head>
+<body>
+    <div class="box">
+    <div class="logo_top"></div>
+    <div class="card">
+    <h2 style="text-align: center;">{{tite}}[{{tite}}]{{title}}</h2>
+    <br><strong>尊敬的用户 {{name}}</strong> <br><br>
+    <span style=" margin: 0; padding: 0; display: inline-block ; ">{{text1}}</span> 
+    <br><span style="margin: 0; padding: 0; display: inline-block; margin-top: 60px;">{{text2}} </span><br>
+    <span style="margin: 0; padding: 0; color: #303133; font-family: 'Alibaba PuHuiTi'; font-size: 16px;">&nbsp;</span> 
+    <br><span style="margin: 0; padding: 0; margin-top: 20px; display: inline-block; width: 100%; text-align: right;">{{tite}}</span> 
+    <br><span style="margin: 0; padding: 0; margin-top: 20px; display: inline-block; width: 100%; text-align: right;">
+    <span style="border-bottom:1px dashed #ccc;" t="5" id="time">{{tiem}}</span></span></div>
+    <ul class="banquan">
+    </ul>
+    </div>
+</body>
+</html>

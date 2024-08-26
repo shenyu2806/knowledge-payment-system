@@ -1,0 +1,41 @@
+.table-wrapped{
+    padding: 8px;
+    display: flex;
+    height: calc(100vh - 101px);
+    background: #F5F5F5;
+    flex-direction: column;
+    justify-content: space-between;
+    .table-top{
+        .table-header{
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            background: #fff;
+            .el-input__wrapper{
+                height: 32px;
+                padding: 0 15px;
+            }
+            .left-wrapped{
+                display: flex;
+                .select-wrapped{
+                    margin-left: 24px;
+                }
+            }
+            .search-wrapped{
+                display: flex;
+                justify-items: end;
+            }
+            .text-wrapped{
+                margin:8px 24px;
+                font-size: 12px;
+                color: red
+            }
+        }
+    }
+    .table-footer{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

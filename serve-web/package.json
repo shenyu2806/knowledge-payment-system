@@ -1,0 +1,66 @@
+{
+  "name": "爱学习网管理系统",
+  "version": "1.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 9090",
+    "build": "vite build",
+    "serve": "vite preview",
+    "electron": "wait-on tcp:3000 && electron .",
+    "electron:serve": "concurrently -k \"npm run dev\" \"npm run electron\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "next",
+    "axios": "^1.7.2",
+    "echarts": "^5.5.1",
+    "electron": "^32.0.1",
+    "element-plus": "^2.8.0",
+    "fast-glob": "^3.3.2",
+    "mitt": "^3.0.1",
+    "pinia": "^2.2.2",
+    "pinia-persistedstate-plugin": "^0.1.0",
+    "pnpm": "^9.8.0",
+    "rxjs": "^7.8.1",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.0",
+    "style-loader": "^4.0.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue": "latest",
+    "vue-router": "^4.4.3",
+    "webpack": "^5.93.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/compiler-sfc": "^3.2.6",
+    "concurrently": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "electron-builder": "^24.13.3",
+    "fast-glob": "^3.3.2",
+    "sass": "^1.77.8",
+    "vite": "^2.5.2",
+    "wait-on": "^6.0.0"
+  },
+  "build": {
+    "appId": "com.your-website.your-app",
+    "productName": "ElectronApp",
+    "copyright": "Copyright © 2021 <your-name>",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist_electron"
+    }
+  }
+}

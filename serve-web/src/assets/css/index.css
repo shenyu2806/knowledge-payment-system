@@ -1,0 +1,16 @@
+/* 隐藏整个页面的滚动条 */
+body {
+    overflow: hidden;
+}
+
+/* 如果你只想隐藏滚动条的外观，但仍然能滚动 */
+.scrollable-content {
+    scrollbar-width: none; /* 对于Firefox */
+    -ms-overflow-style: none; /* 对于IE 10+ 和 Edge */
+    overflow-y: scroll; /* 保持滚动功能 */
+}
+
+/* 针对Chrome和Safari的自定义滚动条样式 */
+.scrollable-content::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
+}
