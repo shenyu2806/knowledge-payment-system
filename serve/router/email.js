@@ -86,7 +86,7 @@ router.post('/resetpassword', (req, res) => {
         }
         // 邮件选项
         let mailOptions = {
-            from: '"团子网"tuzwyx@foxmail.com',
+            from: '"你的QQ邮箱用户名"你的QQ邮箱号',
             to: email,
             subject: "重置密码",
             placeholders: {
@@ -144,7 +144,7 @@ router.post('/countemail', (req, res) => {
         }
         // 邮件选项
         let mailOptions = {
-            from: '"团子网"tuzwyx@foxmail.com',
+            from: '"你的QQ邮箱用户名"你的QQ邮箱号',
             to: email,
             subject: "启用账号",
             placeholders: {
