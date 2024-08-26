@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
     if (email) {
         // 邮件选项
         let mailOptions = {
-            from: '"团子网"tuzwyx@foxmail.com',
+            from: '"你的QQ邮箱用户名"你的QQ邮箱号',
             to: email,
             subject: "测试邮件",
             placeholders: {
